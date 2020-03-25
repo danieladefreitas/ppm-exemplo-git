@@ -11,7 +11,13 @@
         <h1>
             Bem-vindo a web!
         </h1>
-        <p onclick="alert('Clicado no parágrafo!')">Novo parágrafo</p>
+        <p>Novo parágrafo</p>
         <script src="script.js"></script>
+        <script>
+            const p = document.querySelector('p');
+            p.onclick = function() {
+                window.alert('Clicado no parágrafo!');
+            };
+        </script>
     </body>
 </html>
